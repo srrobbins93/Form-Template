@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Template</title>
+</head>
+<body>
+<div id="main-container">
+    <div id="left-container">
+        <img src="pictures/doctor.jpg">
+    </div>
+    <div id="right-container">
+        <h1 class="title" id="main-title">Submit a Referral</h1>
+        <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum</div>
+        <div id="form-container">
+            <div id="referral-form" class="form-section"></div>
+                <form id="form" method="post" action="mailto:srrobbins93@gmail.com" enctype="multipart/form-data">
+                    <h2 class="title">Member Information</h2>
+                    <label for="memberName">Member Name: (First, MI, Last)</label>
+                    <label for="memberID">Member ID #:</label>
+                    <input type="text" name="memberName" required>
+                    <input type="text" name="memberID" required>
+                    <label for="memberPhone">Phone:</label>
+                    <label for="memberDOB">Date of Birth:</label>
+                    <input type="text" name="memberPhone" required>
+                    <input type="date" name="memberDOB" requried>
+                    <label for="memberAddress">Member Address:</label>
+                    <p></p>
+                    <input type="text" name="memberAddress" required>
+                    <h2 class="title">Primary Care Provider (PCP) Information</h2>
+                    <label for="PCPName">PCP Name: (First, MI, Last)</label>
+                    <label for="PCPTaxID">PCP Tax ID #:</label>
+                    <input type="text" name="PCPName" required>
+                    <input type="text" name="PCPTaxID" required>
+                    <label for="PCPNPI">PCP National Provider ID (NPI):</label>
+                    <label for="PCPPhone">PCP Phone:</label>
+                    <input type="text" name="PCPNPI" requried>
+                    <input type="text" name="PCPPhone" required>
+                    <label for="PCPEmail">PCP E-mail:</label>
+                    <label for="PCPAddress">PCP Address:</label>
+                    <input type="text" name="PCPEmail" required>
+                    <input type="text" name="PCPAddress" required>
+                    <h2 class="title">Specialist Information</h2>
+                    <label for="SpecialistName">Specialist Name: (First, MI, Last)</label>
+                    <label for="SpecialistType">Specialist Type:</label>
+                    <input type="text" name="SpecialistName" required>
+                    <input type="text" name="SpecialistType" required>
+                    <label for="SpecialistTaxID">Specialist Tax ID #:</label>
+                    <label for="SpecialistNPI">Specialist National Provider ID (NPI):</label>
+                    <input type="text" name="SpecialistTaxID" required>
+                    <input type="text" name="PCPNPI" requried>
+                    <label for="SpecialistPhone">Specialist Phone:</label>
+                    <label for="SpecialistEmail">Specialist E-mail:</label>
+                    <input type="text" name="PCPPhone" required>
+                    <input type="text" name="PCPEmail" required>
+                    <label for="SpecialistAddress">Specialist Address:</label>
+                    <p></p>
+                    <input type="text" name="PCPAddress" required>
+                    <button id="post-submit" type="submit" form="form" value="Submit">Submit Referral</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
